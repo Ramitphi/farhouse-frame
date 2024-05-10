@@ -17,8 +17,8 @@ const handleRequest = frames(async (ctx) => {
   const params = new URLSearchParams({
     text: "FarHouse Launch",
     dates: `${convertToGoogleTimeFormat(
-      "May 13, 2024, 6:30:00 PM"
-    )}/${convertToGoogleTimeFormat("May 13, 2024, 7:30:00 PM")}`,
+      "May 13, 2024, 1:00:00 PM"
+    )}/${convertToGoogleTimeFormat("May 13, 2024, 1:30:00 PM")}`,
 
     sf: "true",
     output: "xml",
