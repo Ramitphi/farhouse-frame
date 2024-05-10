@@ -15,7 +15,7 @@ const handleRequest = frames(async (ctx) => {
       .concat("Z");
 
   const params = new URLSearchParams({
-    text: "Huddle01 Meeting",
+    text: "FarHouse Launch",
     dates: `${convertToGoogleTimeFormat(
       "May 13, 2024, 6:30:00 PM"
     )}/${convertToGoogleTimeFormat("May 13, 2024, 7:30:00 PM")}`,
@@ -25,7 +25,7 @@ const handleRequest = frames(async (ctx) => {
   }).toString();
 
   return {
-    image: `${process.env.VERCEL_URL}/spaces.png`,
+    image: `https://farhouse-frame.vercel.app/spaces.png`,
     buttons: [
       <Button
         action="link"
