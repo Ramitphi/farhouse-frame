@@ -2,8 +2,12 @@
 import { Button } from "frames.js/next/pages-router/server";
 import { frames } from "./frames";
 import Image from "next/image";
+import { init, validateFramesMessage } from "@airstack/frames";
 
 const handleRequest = frames(async (ctx) => {
+  const body = ctx.message;
+  init("1cd28db661ccd461cb3663ffb06821cf4");
+
   const convertToGoogleTimeFormat = (date: string) =>
     new Date(date)
       .toISOString()
